@@ -1,7 +1,7 @@
-FROM alpine 
+FROM m0elnx/alpine-x86
 
 RUN apk update && \
-	apk add openvpn iptables socat curl
+	apk add openssl openvpn iptables socat curl
 
 ADD ./bin /sbin
 
